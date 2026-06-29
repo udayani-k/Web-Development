@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Layout Example</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family:Arial, sans-serif;
+        }
+
+        header{
+            background:#4CAF50;
+            color:white;
+            padding:20px;
+            text-align:center;
+        }
+
+        nav{
+            background:#333;
+            padding:15px;
+            text-align:center;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:15px;
+        }
+
+        .container{
+            display:flex;
+            margin:20px;
+        }
+
+        main{
+            flex:3;
+            margin-right:20px;
+        }
+
+        section{
+            background:#f2f2f2;
+            padding:20px;
+            margin-bottom:20px;
+        }
+
+        article{
+            background:white;
+            padding:15px;
+            border:1px solid #ccc;
+        }
+
+        aside{
+            flex:1;
+            background:#ddd;
+            padding:20px;
+        }
+
+        footer{
+            background:#222;
+            color:white;
+            text-align:center;
+            padding:20px;
+            margin-top:20px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>Website Header</h1>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+</nav>
+
+<div class="container">
+
+    <main>
+
+        <section>
+            <h2>Section 1</h2>
+
+            <article>
+                <h3>Article 1</h3>
+                <p>This is the first article.</p>
+            </article>
+
+        </section>
+
+        <section>
+            <h2>Section 2</h2>
+
+            <article>
+                <h3>Article 2</h3>
+                <p>This is the second article.</p>
+            </article>
+
+        </section>
+
+    </main>
+
+    <aside>
+        <h2>Sidebar</h2>
+        <p>Links, Ads, News, etc.</p>
+    </aside>
+
+</div>
+
+<footer>
+    <p>© 2026 My Website</p>
+</footer>
+
+</body>
+</html>

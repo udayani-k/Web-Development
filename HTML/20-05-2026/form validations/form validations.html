@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+</head>
+
+<body>
+
+    <form>
+
+        <!-- Username -->
+        <label for ="username">Username:</label>
+        <input type="Username" 
+            
+            placeholder="Enter your name" 
+           required
+        >
+
+        <br><br>
+
+        <!-- Email -->
+        <label for ="email">Email:</label>
+        <input  type="email" 
+           
+            placeholder="Enter your email as @gmail.com"
+            
+        >
+
+        <br><br>
+
+        <!-- Number Input -->
+        <label for="number">Number (10 - 200):</label>
+        <input 
+            type="number" 
+            
+            min="10" 
+            max="200"
+            required
+        >
+
+        <br><br>
+
+        <!-- Text with length restriction -->
+        <label for="textinput">Text (2 to 10 characters):</label>
+        <input 
+            type="text" 
+           
+            minlength="2" 
+            maxlength="10"
+            required
+        >
+
+        <br><br>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+
+    </form>
+
+</body>
+</html>

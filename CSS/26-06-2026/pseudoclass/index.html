@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            
+            width:1000px;
+            height:600px;
+          
+           font-size:60;
+           font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+           border:#d06868;
+           border-style:dotted;
+           border-color:blue;
+           
+        }
+    
+        button:hover{
+            color:green
+        }
+        button:active{
+            color:blue
+        }
+        button:focus{
+           border: 3px solid green;
+           outline:none;
+        }
+        li:first-child
+        {
+            color:red
+        }
+        li:last-child{
+            color:coral
+        }
+        li:nth-child(2){
+            color:cadetblue
+        }
+        input:checked{
+            width:20px
+         
+        }
+        input:disabled{
+            background-color: blue;
+        }
+       input:enabled{
+        background-color: greenyellow;
+       } 
+       p:first-of-type{
+        color:darkblue
+       }
+       p:last-of-type{
+        color:darkviolet
+       }
+a:visited{
+    color:purple
+}
+input{
+    padding: 8px;
+    margin: 5px
+}
+::selection{
+    color:brown
+}
+ </style>
+
+
+    
+</head>
+<body>
+    
+    <div>
+        <button style="border:2px solid black;background-color:burlywood";>Next</button>
+    </div>
+    <div>
+        <button class="next" style="border:4px solid black;background-color:greenyellow"; >previous</button>
+    </div>
+   <p> <ul>
+        <li>banana</li>
+        <li>apple</li>
+        <li>mango</li>
+    </ul></p>
+    <input type="checkbox"><br>
+    <a href="https://youtu.be/0jHPPhczH1g?si=albwOBk27zvlm1Ut">click</a><br>
+    <a href="https://youtu.be/x-9i31iPe2A?si=3zBSCuitnUyQAUhW">click</a><br>
+    <a href="https://youtu.be/JIPTIqboKnI?si=t7K5Y9WAUK-0l9U-">click</a><br>
+    <a href="https://youtu.be/53qzx_5H654?si=42ByV9EN__xiZepN">click</a><br>
+    <label for>User name</label>
+    <input type="name"placeholder="enter your name"><br>
+    <label for>Gender</label><br>
+    <input type="radio" name="gender"required>Female
+    <input type="radio" name="gender"required>Male
+    <input type="radio" name="gender"required>Others
+</body>
+</html>

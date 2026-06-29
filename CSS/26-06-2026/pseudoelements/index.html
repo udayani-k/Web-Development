@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <style>
+
+        body{
+            width: 90%;
+            height: auto;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: larger;
+            border-style:ridge;
+            border-color:cornflowerblue;
+        }
+        h1::after{
+           color:blueviolet;
+           content:" Java"
+        }
+
+        h1::before{
+            color:chocolate;
+            content:"Java Script "
+        }
+        h1::first-letter{
+            color:black;
+            font-style: italic;
+        }
+
+        h3::first-line{
+            color:chartreuse
+        }
+
+        li::first-letter{
+            color:blue
+        }
+
+        li::first-line{
+            color:rgb(255, 0, 140);
+        }
+
+/* list bullets or numbers */
+        li::marker{
+            color:darkred
+        }
+/* selected text  */
+        ::selection{
+            color:yellow
+        }
+
+        
+    </style>
+</head>
+<body>
+    
+    <h3 style="color:darkcyan">Python<br>
+      
+    </h3>
+   <h2>Prolog</h2>
+    <h2>Good morning</h2>
+    <p>good afternoon</p>
+    <p>good evening</p>
+    <p>Hello</p>
+    <p>hi</p>
+
+     <label>Gender</label><br>
+        <input type="radio" name="gender" required>Female
+        <input type="radio" name="gender" required>Male
+        <input type="radio" name="gender" required>Others
+        <br><br>
+
+    <ul>
+        <li>cat</li>
+        <li>rat</li>
+        <li>deer</li>
+        <li>camel</li>
+        <li>bear</li>
+        <li>tiger</li>
+        <li>lion</li>
+    </ul>
+
+    <button style="background-color: cadetblue;">click me</button>
+</body>
+</html>

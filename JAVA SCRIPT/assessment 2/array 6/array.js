@@ -1,0 +1,10 @@
+const Numbers=[10,20,30,40,50]
+console.log(Numbers)
+Numbers.push(60)
+console.log(Numbers)
+Numbers.unshift(5)
+console.log(Numbers)
+Numbers.pop()
+console.log(Numbers)
+console.log(Numbers.length)
+console.log(Numbers.isNumbers)

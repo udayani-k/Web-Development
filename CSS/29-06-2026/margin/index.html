@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #one{
+            color:blueviolet
+        }
+    #box2{
+        box-sizing: border-box;
+        background: black;
+        min-width: 50%;
+        min-height: 40px;
+        color:lightsalmon;
+       /* padding:5px; */
+       margin: 20px;
+    }
+    #box1{
+        box-sizing: content-box;
+        background:lightpink;
+        min-width: 50%;
+        min-height: 40px;
+        border:2px solid black;
+        /* padding:5px; */
+        margin:20px;
+    }
+    div{
+       display:flex;
+       background-color:beige;
+       justify-content:flex-start;
+       align-items:center;
+    }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div>
+    <p style="color:aqua">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+    <p style="color:lightgoldenrodyellow;border:1px  solid black; background-color:blue;width:50%;margin-top:40px;">hello</p>
+    </div>
+    <p style="color:chartreuse;margin:20px;border:10px solid black;">Hello</p>
+    <h1 id="box1">content box</h1>
+    <h1 id="box2">border box</h1>
+        <h1 id="box1">content box </h1>
+</body>
+</html>
