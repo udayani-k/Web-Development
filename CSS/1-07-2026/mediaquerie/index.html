@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Grid Layout</title>
+
+<style>
+
+.container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.one,.two,.three,.four,.five{
+    background:chocolate;
+    color:white;
+    padding:20px;
+    text-align:center;
+    font-size:20px;
+}
+
+
+.one{
+    grid-column:1/4;
+}
+
+.two{
+    grid-column:1/2;
+}
+
+.three{
+    grid-column:2/4;
+}
+
+.four{
+    grid-column:1/4;
+}
+
+.five{
+    grid-column:1/4;
+}
+
+/* tablet */
+
+@media (min-width:900px){
+
+.container{
+    grid-template-columns:1fr;
+}
+
+.one,
+.two,
+.three,
+.four,
+.five{
+    grid-column:1;
+    background:darkcyan;
+}
+  
+
+}
+/* mobile */
+/* @media(max-width:500px) */
+@media (max-width: 600px) and (orientation: portrait) 
+{
+    .container{
+        grid-template-columns: 1fr;
+    }
+    .one,
+    .two,
+    .three,
+    .four,
+    .five{
+        grid-column:1;
+        background:cyan;
+
+    }
+}
+    
+    /* labtop */
+
+    
+    @media (min-width:1000px){
+        .container{
+            grid-template-columns: 1fr;
+        }
+    
+    .one,
+    .two,
+    .three,
+    .four,
+    .five{
+        grid-column:1;
+        background:darkmagenta;
+
+        
+    }
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+    <div class="one">Header</div>
+    <div class="two">Navigator</div>
+    <div class="three">Sidebar</div>
+    <div class="four">Body Area</div>
+    <div class="five">Footer</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display:grid;
+            color:black;
+            /* background-color: cadetblue; */
+            border: azure;
+            border-radius:50px;
+            grid-template-columns: repeat(3,1fr);
+            gap: 20px;
+        }
+        .one,.two,.three,.four,.five{
+            background:chocolate;
+            padding: 20px;
+            text-align: center;
+            font-size: medium;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        .one{
+            grid-column:1/4 ;
+        }
+        .two{
+            grid-column:1/2;
+        }
+        .three{
+            grid-column:2/4
+        }
+        .four{
+            grid-column: 1/4;
+        }
+        .five{
+            grid-column:1/4;
+        }
+
+/* 
+        /* @media (max-width:500px){
+    .container{
+        grid-template-columns:1fr;
+    }
+
+    .box{
+        background:#4CAF50;
+        font-size:20px;
+        padding:30px;
+    } */
+/* } */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="one">Header</div>
+        <div class="two">Navigator</div>
+        <div class="three">Sidebar</div>
+        <div class="four">BodyArea</div>
+    <div class="five">Footer</div>
+    </div>
+</body>
+</html>
