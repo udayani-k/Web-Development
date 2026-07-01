@@ -1,89 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Student ID Card</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+        .container{
+            width:600px;
+            margin:200px auto;
+            margin-left: 200px; 
+            margin-top: 20px;
+            /* grid-template-columns:repeat(2, 400px); */
 
-<style>
-body{
-    background-color:white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
+        }
+        body{
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            font-size: large;
+            box-sizing:content-box ;
+            font-weight:bold;
+            color:black;
 
-.card{
-    width: 300px;px;
-    border:3px solid navy;
-    border-radius:15px;
-    background-color:lightgrey;
-    margin:50px auto;
-    text-align:center;
-    padding:20px;
-}
 
-.card h2{
-    color:navy;
-    margin:10px 0;
-}
+        }
+        
+        .logo {
+            display:flex;
+            align-items:flex-start;
+            background-color:aqua;
+            text-align: left;
+            border-radius: 20px;
+            border-style:groove;
+            padding:40px;
+         }
+        .nav{
+            background-color:aqua;
+            text-align:center;
+            border-radius: 10px;
+            border-style:groove;
+            padding: 40px;
+            margin-top: 10px;
+        }
+        .header{
+             background-color:aqua;
+            text-align:center;
+            border-radius: 10px;
+            border-style:groove;
+            padding: 40px;
+            margin-top: 10px;
+        }
+        .side{
+            background-color:aqua;
+            text-align:center;
+            border-radius: 10px;
+            border-style:groove;
+            padding: 15px;
+            width:200%;
+            min-height: 150px;
+            display:flex;
+            align-items: center;
+            justify-content: center;
 
-.card img{
-    width:120px;
-    height:120px;
-    border-radius:50%;
-    border:3px solid green;
-}
+        }
+        .main{
+            display:flex;
+            gap:10px;
+            margin-top:10px;
+            
+        }
 
-.info{
-    text-align:left;
-    margin-top:20px;
-    font-size:18px;
-}
 
-.info p{
-    margin:10px 0;
-}
+        #footer{
+    
+          background-color: aqua;
+          text-align: center;
+            border-radius: 20px;
+            border-style:groove;
+            padding: 40px;
+            margin-top: 10px;
+        }
+        .body{
+             background-color:aqua;
+            text-align:center;
+            border-radius: 10px;
+            border-style:groove;
+            width:400%;
+           min-height: 150px;
+           padding:15px;
+           align-items:center;
+           justify-content: center;
+           display:flex;
 
-.college{
-    background-color:green;
-    color:white;
-    padding:10px;
-    border-radius:10px;
-    margin-bottom:15px;
-}
-
-.footer{
-    margin-top:20px;
-    color:red;
-    font-weight:bold;
-}
-</style>
+        }
+        
+        
+    </style>
 </head>
-
 <body>
-
-<div class="card">
-
-    <div class="college">
-        <h2>Gate Educational Institutions</h2>
-        <p>Student Identity Card</p>
+    <div class="container">
+    <div class="logo">
+        LOG0
     </div>
-
-    <img src="https://png.pngtree.com/png-vector/20190710/ourmid/pngtree-user-vector-avatar-png-image_1541962.jpg" alt="Student Photo">
-
-    <div class="info">
-        <p><b>Name:</b> Udayani</p>
-        <p><b>ID:</b> 23CS101</p>
-        <p><b>Course:</b> BCA(AI)</p>
-        <p><b>Year:</b> Final Year</p>
-        <p><b>Mobile:</b> **********</p>
-        <p><b>Blood Group:</b> O+</p>
+    <div class="nav">
+       Navigation
     </div>
-
-    <div class="footer">
-        Valid Till: 2028
+    <div class="header">
+       Header/Banner
     </div>
-
-</div>
-
+    <div class="main">
+    <div class="side">
+        Side Bar
+        
+    </div>
+    <div class="body">
+        Body Area
+    </div>
+    </div>
+    <div id="footer">
+        Footer
+    </div>
+    
+    </div>
 </body>
 </html>
